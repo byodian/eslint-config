@@ -1,18 +1,20 @@
 {
-  "name": "@byodian/eslint-config-monorepo",
-  "version": "0.0.1",
+    "name": "@byodian/eslint-config-monorepo",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "prepare": "pnpm -r run stub",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "author": "byodian",
   "license": "MIT",
   "devDependencies": {
+    "@byodian/eslint-config": "*",
+    "bumpp": "^7.1.1",
     "eslint": "^8.19.0"
-  },
-  "dependencies": {
-    "eslint-plugin-vue": "^9.2.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"

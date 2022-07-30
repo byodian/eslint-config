@@ -1,0 +1,39 @@
+{
+  "name": "@byodian/eslint-config",
+  "version": "0.1.0",
+  "author": "byodian <byodian@hotmail.com> (https://github.com/byodian)",
+  "description": "",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@byodian/eslint-config-react": "workspace:*",
+    "@byodian/eslint-config-vue": "workspace:*",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-jsonc": "^2.2.1",
+    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-yml": "^1.0.0",
+    "jsonc-eslint-parser": "^2.1.0",
+    "yaml-eslint-parser": "^1.0.1",
+    "eslint-plugin-vue": "^9.0.1",
+    "eslint-plugin-react": "^7.30.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0"
+  }
+}
