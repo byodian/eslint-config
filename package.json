@@ -1,22 +1,22 @@
 {
-    "name": "@byodian/eslint-config-monorepo",
+  "name": "@byodian/eslint-config-monorepo",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
+  "description": "",
+  "author": "byodian",
+  "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "prepare": "pnpm -r run stub",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
-  "author": "byodian",
-  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
   "devDependencies": {
     "@byodian/eslint-config": "*",
     "bumpp": "^7.1.1",
     "eslint": "^8.19.0"
-  },
-  "peerDependencies": {
-    "eslint": ">=7.4.0"
   }
 }

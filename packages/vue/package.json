@@ -1,16 +1,16 @@
 {
   "name": "@byodian/eslint-config-vue",
   "version": "0.1.0",
-  "author": "byodian <byodian@hotmail.com> (https://github.com/byodian)",
   "description": "",
+  "author": "byodian <byodian@hotmail.com> (https://github.com/byodian)",
   "license": "MIT",
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "keywords": [
     "eslint",
     "eslintconfig"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
   ],
   "peerDependencies": {
     "eslint": ">=7.4.0"
