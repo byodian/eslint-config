@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    '@byodian/eslint-config-basic',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    '@byodian/eslint-config-basic'
   ],
   settings: {
     react: {

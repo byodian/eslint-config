@@ -5,8 +5,8 @@ module.exports = {
     browser: true
   },
   extends: [
-    '@byodian/eslint-config-basic',
-    'plugin:vue/recommended'
+    'plugin:vue/recommended',
+    '@byodian/eslint-config-basic'
   ],
   rules: {
     'vue/max-attributes-per-line': ['error', {
