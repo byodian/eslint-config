@@ -36,6 +36,11 @@ module.exports = {
     'html',
     'unicorn'
   ],
+  settings: {
+    'import/resolver': {
+      node: { extensions: ['.js', '.mjs'] }
+    }
+  },
   overrides: [
     {
       files: ['*.json', '*.json5'],
@@ -149,7 +154,9 @@ module.exports = {
     'import/no-mutable-exports': 'error',
     'import/no-unresolved': 'off',
     'import/no-absolute-path': 'off',
-
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
+    'import/namespace': 'off',
     // Common
 
     'accessor-pairs': 'error',

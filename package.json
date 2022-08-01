@@ -8,7 +8,6 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "prepare": "pnpm -r run stub",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "peerDependencies": {
