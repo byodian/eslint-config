@@ -4,17 +4,17 @@ module.exports = {
       files: ['*.vue'],
       parser: 'vue-eslint-parser',
       parserOptions: {
-        parser: '@babel/eslint-parser'
+        parser: '@babel/eslint-parser',
       },
       rules: {
         'no-unused-vars': 'off',
-        'on-undef': 'off'
-      }
-    }
+        'on-undef': 'off',
+      },
+    },
   ],
   extends: [
     'plugin:vue/recommended',
-    '@byodian/eslint-config-basic'
+    '@byodian/eslint-config-basic',
   ],
   rules: {
     'vue/max-attributes-per-line': 'off',
@@ -25,23 +25,23 @@ module.exports = {
     'vue/prefer-import-from-vue': 'off',
 
     'vue/component-tags-order': ['error', {
-      order: ['script', 'template', 'style']
+      order: ['script', 'template', 'style'],
     }],
     'vue/component-name-in-template-casing': ['error', 'PascalCase'],
     'vue/component-options-name-casing': ['error', 'PascalCase'],
     'vue/custom-event-name-casing': ['error', 'camelCase'],
     'vue/define-macros-order': ['error', {
-      order: ['defineProps', 'defineEmits']
+      order: ['defineProps', 'defineEmits'],
     }],
 
     'vue/html-button-has-type': ['error', {
       button: true,
       submit: true,
-      reset: true
+      reset: true,
     }],
 
     'vue/html-comment-content-spacing': ['error', 'always', {
-      exceptions: ['-']
+      exceptions: ['-'],
     }],
     'vue/no-restricted-v-bind': ['error', '/^v-/'],
     'vue/no-useless-v-bind': 'error',
@@ -71,7 +71,7 @@ module.exports = {
       'error',
       'DebuggerStatement',
       'LabeledStatement',
-      'WithStatement'
+      'WithStatement',
     ],
     'vue/no-sparse-arrays': 'error',
     'vue/object-curly-newline': ['error', { multiline: true, consistent: true }],
@@ -82,8 +82,8 @@ module.exports = {
       'always',
       {
         ignoreConstructors: false,
-        avoidQuotes: true
-      }
+        avoidQuotes: true,
+      },
     ],
     'vue/operator-linebreak': ['error', 'before'],
     'vue/prefer-template': 'error',
@@ -91,6 +91,6 @@ module.exports = {
     'vue/space-in-parens': ['error', 'never'],
     'vue/space-infix-ops': 'error',
     'vue/space-unary-ops': ['error', { words: true, nonwords: false }],
-    'vue/template-curly-spacing': 'error'
-  }
+    'vue/template-curly-spacing': 'error',
+  },
 }

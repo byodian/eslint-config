@@ -2,7 +2,7 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    browser: true
+    browser: true,
   },
   reportUnusedDisableDirectives: true,
   extends: [
@@ -11,7 +11,7 @@ module.exports = {
     'plugin:eslint-comments/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
-    'plugin:markdown/recommended'
+    'plugin:markdown/recommended',
   ],
   ignorePatterns: [
     '*.min.*',
@@ -29,17 +29,17 @@ module.exports = {
     '__snapshots__',
     '!.github',
     '!.vitepress',
-    '!.vscode'
+    '!.vscode',
   ],
 
   plugins: [
     'html',
-    'unicorn'
+    'unicorn',
   ],
   settings: {
     'import/resolver': {
-      node: { extensions: ['.js', '.mjs'] }
-    }
+      node: { extensions: ['.js', '.mjs'] },
+    },
   },
   overrides: [
     {
@@ -54,8 +54,8 @@ module.exports = {
         'jsonc/no-octal-escape': 'error',
         'jsonc/object-curly-newline': ['error', { multiline: true, consistent: true }],
         'jsonc/object-curly-spacing': ['error', 'always'],
-        'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }]
-      }
+        'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
+      },
     },
     {
       files: ['*.yml', '*.yaml'],
@@ -64,8 +64,8 @@ module.exports = {
         'spaced-comment': 'off',
         'no-unused-expressions': 'off',
         'no-labels': 'off',
-        'space-unary-ops': 'off'
-      }
+        'space-unary-ops': 'off',
+      },
     },
     {
       files: ['package.json'],
@@ -118,21 +118,21 @@ module.exports = {
               'husky',
               'simple-git-hooks',
               'lint-staged',
-              'eslintConfig'
-            ]
+              'eslintConfig',
+            ],
           },
           {
             pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-            order: { type: 'asc' }
-          }
-        ]
-      }
+            order: { type: 'asc' },
+          },
+        ],
+      },
     },
     {
       files: ['*.test.ts', '*.test.js', '*.spec.ts', '*.spec.js'],
       rules: {
-        'no-unused-expressions': 'off'
-      }
+        'no-unused-expressions': 'off',
+      },
     },
     {
       files: ['**/*.md/*.*'],
@@ -143,9 +143,9 @@ module.exports = {
         'no-restricted-imports': 'off',
         'no-undef': 'off',
         'no-unused-expressions': 'off',
-        'no-unused-vars': 'off'
-      }
-    }
+        'no-unused-vars': 'off',
+      },
+    },
   ],
   rules: {
     // import
@@ -162,19 +162,19 @@ module.exports = {
     'accessor-pairs': 'error',
     'arrow-spacing': ['error', {
       before: true,
-      after: true
+      after: true,
     }],
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', {
-      allowSingleLine: true
+      allowSingleLine: true,
     }],
     camelcase: ['off', {
-      properties: 'always'
+      properties: 'always',
     }],
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': ['error', {
       before: false,
-      after: true
+      after: true,
     }],
     'comma-style': ['error', 'last'],
     'constructor-super': 'error',
@@ -184,24 +184,24 @@ module.exports = {
     eqeqeq: ['error', 'always', { null: 'ignore' }],
     'generator-star-spacing': ['error', {
       before: true,
-      after: true
+      after: true,
     }],
     'handle-callback-err': ['error', '^(err|error)$'],
     indent: ['error', 2, {
-      SwitchCase: 1
+      SwitchCase: 1,
     }],
     'jsx-quotes': ['error', 'prefer-single'],
     'key-spacing': ['error', {
       beforeColon: false,
-      afterColon: true
+      afterColon: true,
     }],
     'keyword-spacing': ['error', {
       before: true,
-      after: true
+      after: true,
     }],
     'new-cap': ['error', {
       newIsCap: true,
-      capIsNew: false
+      capIsNew: false,
     }],
     'new-parens': 'error',
     'no-array-constructor': 'error',
@@ -238,7 +238,7 @@ module.exports = {
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-multiple-empty-lines': ['error', {
-      max: 1
+      max: 1,
     }],
     'no-native-reassign': 'error',
     'no-negated-in-lhs': 'error',
@@ -268,13 +268,13 @@ module.exports = {
     'no-unexpected-multiline': 'error',
     'no-unmodified-loop-condition': 'error',
     'no-unneeded-ternary': ['error', {
-      defaultAssignment: false
+      defaultAssignment: false,
     }],
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
     'no-unused-vars': ['error', {
       vars: 'all',
-      args: 'none'
+      args: 'none',
     }],
     'no-useless-call': 'error',
     'no-useless-computed-key': 'error',
@@ -283,30 +283,30 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
     'one-var': ['error', {
-      initialized: 'never'
+      initialized: 'never',
     }],
     'operator-linebreak': ['error', 'after', {
       overrides: {
         '?': 'before',
-        ':': 'before'
-      }
+        ':': 'before',
+      },
     }],
     'padded-blocks': ['error', 'never'],
     quotes: ['error', 'single', {
       avoidEscape: true,
-      allowTemplateLiterals: true
+      allowTemplateLiterals: true,
     }],
     semi: ['error', 'never'],
     'semi-spacing': ['error', {
       before: false,
-      after: true
+      after: true,
     }],
     'space-before-blocks': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
     'space-in-parens': ['error', 'never'],
     'space-infix-ops': 'error',
     'spaced-comment': ['error', 'always', {
-      markers: ['global', 'globals', 'eslint', 'eslint-disable', '*package', '!', ',']
+      markers: ['global', 'globals', 'eslint', 'eslint-disable', '*package', '!', ','],
     }],
     'template-curly-spacing': ['error', 'never'],
     'use-isnan': 'error',
@@ -317,8 +317,8 @@ module.exports = {
     'prefer-const': 'error',
     'no-debugger': 'error',
     'object-curly-spacing': ['error', 'always', {
-      objectsInObjects: false
+      objectsInObjects: false,
     }],
-    'array-bracket-spacing': ['error', 'never']
-  }
+    'array-bracket-spacing': ['error', 'never'],
+  },
 }
