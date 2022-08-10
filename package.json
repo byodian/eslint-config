@@ -7,8 +7,8 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "lint:withoutfix": "eslint . --fix",
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
+    "lint:withoutfix": "eslint .",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "peerDependencies": {
