@@ -70,7 +70,7 @@ module.exports = {
 
 **eslint-plugin-import**
 
-顺便一提 [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import) 插件的 [resolvers])(https://github.com/import-js/eslint-plugin-import#resolvers) 
+顺便一提 [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import) 插件的 [resolvers](https://github.com/import-js/eslint-plugin-import#resolvers) 
 
 Resolvers 可以将你的文件解析为模块，它可以解决 `import x from 'module'` ES6 模块无法被找到的问题。导致模块未找到的原因可能是现代的打包工具支持多种导入模块的语法，比如模块路径使用别名。
 
@@ -86,7 +86,7 @@ module.exports = {
 
 ```
 
-如果要求更加精细的控制，你可以在配置文件中添加共享设置 `import/resolver`，指定作为模块解析的文件扩展列表，参考 [import/extensions](https://github.com/import-js/eslint-plugin-import#importextensions)。
+如果要求更加精细的控制，你可以在配置文件中添加共享设置 `import/resolver`，并指定作为模块解析的文件扩展列表，参考 [import/extensions](https://github.com/import-js/eslint-plugin-import#importextensions)。
 
 ```js
 module.exports = {
