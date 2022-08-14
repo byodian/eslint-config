@@ -4,6 +4,7 @@
   "description": "",
   "author": "byodian <byodian@hotmail.com> (https://github.com/byodian)",
   "license": "MIT",
+  "homepage": "https://github.com/byodian/eslint-config",
   "keywords": [
     "eslint",
     "eslintconfig"

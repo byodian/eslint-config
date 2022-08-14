@@ -4,17 +4,18 @@ module.exports = {
       files: ['*.vue'],
       parser: 'vue-eslint-parser',
       parserOptions: {
-        parser: '@babel/eslint-parser',
+        parser: '@typescript-eslint/parser',
       },
       rules: {
         'no-unused-vars': 'off',
         'on-undef': 'off',
+        '@typescript-eslint/no-unused-vars': 'error',
       },
     },
   ],
   extends: [
     'plugin:vue/recommended',
-    '@byodian/eslint-config-basic',
+    '@byodian/eslint-config-ts',
   ],
   rules: {
     'vue/max-attributes-per-line': 'off',

@@ -86,11 +86,11 @@ importers:
 
   packages/react:
     specifiers:
-      '@byodian/eslint-config-basic': workspace:*
+      '@byodian/eslint-config-ts': workspace:*
       eslint: ^8.16.0
       eslint-plugin-react: ^7.30.0
     dependencies:
-      '@byodian/eslint-config-basic': link:../basic
+      '@byodian/eslint-config-ts': link:../typescript
       eslint-plugin-react: 7.30.1_eslint@8.20.0
     devDependencies:
       eslint: 8.20.0
@@ -110,11 +110,11 @@ importers:
 
   packages/vue:
     specifiers:
-      '@byodian/eslint-config-basic': workspace:*
+      '@byodian/eslint-config-ts': workspace:*
       eslint: ^8.16.0
       eslint-plugin-vue: ^9.0.1
     dependencies:
-      '@byodian/eslint-config-basic': link:../basic
+      '@byodian/eslint-config-ts': link:../typescript
       eslint-plugin-vue: 9.3.0_eslint@8.20.0
     devDependencies:
       eslint: 8.20.0

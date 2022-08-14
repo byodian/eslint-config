@@ -12,5 +12,5 @@ module.exports = {
     },
   },
   overrides: basic.overrides,
-  rues: {},
+  rules: {},
 }
