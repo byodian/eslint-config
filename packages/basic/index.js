@@ -129,6 +129,18 @@ module.exports = {
       },
     },
     {
+      files: ['*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+    {
+      files: ['scripts/**/*.*', 'cli.*'],
+      rules: {
+        'no-console': 'off',
+      },
+    },
+    {
       files: ['*.test.ts', '*.test.js', '*.spec.ts', '*.spec.js'],
       rules: {
         'no-unused-expressions': 'off',
