@@ -5,9 +5,9 @@ npm install --save-dev @byodian/eslint-config eslint
 ```
 `.eslintrc.js` 的 `extends` 字段设置
 ```
-extends: {
+extends: [
   "@byodian/eslint-config"
-}
+]
 ```
 
 注：本项目参考了 antfu 的开源项目 [eslint-config](https://github.com/antfu/eslint-config)
